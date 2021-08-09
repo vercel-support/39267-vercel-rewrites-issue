@@ -13,16 +13,6 @@ module.exports = {
 					}
 				]
 			},
-			{
-				source: `/:slug*{/}?`,
-				destination: `/:host/:slug*`,
-				has: [
-					{
-						type: 'host',
-						value: '(?<host>.+)'
-					}
-				]
-			}
 		]
 	})
 }

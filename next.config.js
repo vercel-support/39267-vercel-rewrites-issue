@@ -1,7 +1,7 @@
 module.exports = {
 	reactStrictMode: true,
 	rewrites: () => ({
-		afterFiles: [
+		beforeFiles: [
 			{
 				source: `/:slug*{/}?`,
 				destination: `/:host/:slug*`,
